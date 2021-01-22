@@ -1,19 +1,30 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP4 exo7</title>
-  </head>
-  <body>
+  <?php 
+    include "..\\top_p4.php";
+    echo "Exercice 7";
+  ?>
+  <p class="topic">Faire une fonction qui prend deux paramètres : l'âge et le genre d'une personne. Le genre peut être : <br>
+  Homme<br>
+  Femme<br><br>
+
+  La fonction doit renvoyer en fonction des paramètres :<br><br>
+
+  Vous êtes un homme et vous êtes majeur<br>
+  Vous êtes un homme et vous êtes mineur<br>
+  Vous êtes une femme et vous êtes majeure<br>
+  Vous êtes une femme et vous êtes mineure<br><br>
+
+  Gérer tous les cas.
+  </p>
+  <hr>
+  <p class="topicTitle">Résultats</p>
       <p>
       <?php
         function gender_majority($gender, $age){
-          if ($age < 18 AND $gender == "homme"){
+          if ($age < 18 && $gender == "homme"){
             return ("Vous êtes un homme et vous êtes mineur");
-          } elseif ($age < 18 AND $gender =="femme"){
+          } elseif ($age < 18 && $gender =="femme"){
             return ("Vous êtes une femme et vous êtes mineure");
-          } elseif ($age >= 18 AND $gender == "homme"){
+          } elseif ($age >= 18 && $gender == "homme"){
             return ("Vous êtes un homme et vous êtes majeur");
           } else{
             return ("Vous êtes une femme et vous êtes majeure");
@@ -22,20 +33,5 @@
 
         echo gender_majority("homme", 16);
       ?>
-      </p>
-    
-  </body>
-</html>
-
-<!-- Faire une fonction qui prend deux paramètres : l'âge et le genre d'une personne. Le genre peut être :
-Homme
-Femme  
-
-La fonction doit renvoyer en fonction des paramètres :
-
-Vous êtes un homme et vous êtes majeur
-Vous êtes un homme et vous êtes mineur
-Vous êtes une femme et vous êtes majeure
-Vous êtes une femme et vous êtes mineure
-
-Gérer tous les cas. -->
+  </p>
+  <?php include "..\..\bottom_html.php";

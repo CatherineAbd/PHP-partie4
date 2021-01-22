@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHP4 exo2</title>
-</head>
-<body>
+<?php 
+  include "..\\top_p4.php";
+  echo "Exercice 2";
+  ?>
+  <p class="topic">Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine.
+  </p>
+  <hr>
+  <p class="topicTitle">Résultats</p>
     <p>
     <?php
       function returnString($varString){
@@ -16,7 +16,4 @@
     ?>
     </p>
   
-</body>
-</html>
-
-<!-- Faire une fonction qui prend en paramètre une chaine de caractères et qui retourne cette même chaine. -->
+<?php include "..\..\bottom_html.php";

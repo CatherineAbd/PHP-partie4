@@ -1,31 +1,30 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP4 exo4</title>
-  </head>
-  <body>
+<?php 
+  include "..\\top_p4.php";
+  echo "Exercice 4";
+  ?>
+  <p class="topic">Faire une fonction qui prend en paramètre deux nombres. La fonction doit retourner : <br>
+Le premier nombre est plus grand si le premier nombre est plus grand que le deuxième<br>
+Le premier nombre est plus petit si le premier nombre est plus petit que le deuxième<br>
+Les deux nombres sont identiques si les deux nombres sont égaux
+  </p>
+  <hr>
+  <p class="topicTitle">Résultats</p>
       <p>
       <?php
-        function concatString($number1, $number2){
+        function compareInt($number1, $number2){
           if ($number1 > $number2){
-            return "Le premier nombre est plus grand";
+            return "Le premier nombre est plus grand ($number1, $number2)";
           } elseif ($number1 < $number2){
-            return "Le premier nombre est plus petit";
+            return "Le premier nombre est plus petit ($number1, $number2)";
+          } elseif ($number1 == $number2){
+            return "Les 2 nombres sont identiques ($number1, $number2)";
           } else{
-            return "Les 2 nombres sont identiques";
+            return "veuillez entrer des paramètres valides";
           }
         }
 
-        echo concatString(10, 10);
+        echo compareInt(10, 10);
       ?>
       </p>
-    
-  </body>
-</html>
 
-<!-- Faire une fonction qui prend en paramètre deux nombres. La fonction doit retourner :
-Le premier nombre est plus grand si le premier nombre est plus grand que le deuxième
-Le premier nombre est plus petit si le premier nombre est plus petit que le deuxième
-Les deux nombres sont identiques si les deux nombres sont égaux -->
+<?php include "..\..\bottom_html.php";

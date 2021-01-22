@@ -1,11 +1,12 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP4 exo6</title>
-  </head>
-  <body>
+<?php 
+  include "..\\top_p4.php";
+  echo"Exercice 6";
+  ?>
+  <p class="topic">Faire une fonction qui prend trois paramètres : le nom, le prénom et l'âge d'une personne. Elle doit renvoyer une chaîne de la forme :   <br>
+  Bonjour + nom + prénom + , tu as + age + ans.
+  </p>
+  <hr>
+  <p class="topicTitle">Résultats</p>
       <p>
       <?php
         function identity($firstname, $lastname, $age){
@@ -16,8 +17,4 @@
       ?>
       </p>
     
-  </body>
-</html>
-
-<!-- Faire une fonction qui prend trois paramètres : le nom, le prénom et l'âge d'une personne. Elle doit renvoyer une chaine de la forme :  
-Bonjour + nom + prénom + , tu as + age + ans. -->
+<?php include "..\..\bottom_html.php";

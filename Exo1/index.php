@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PHP4 exo1</title>
-</head>
-<body>
+<?php 
+  include "..\\top_p4.php";
+  echo "Exercice 1";
+  ?>
+  <p class="topic">Faire une fonction qui retourne true.</p>
+  <hr>
+  <p class="topicTitle">Résultats</p>
     <p>
     <?php
       function returnTrue(){
@@ -16,7 +15,4 @@
     ?>
     </p>
   
-</body>
-</html>
-
-<!-- Faire une fonction qui retourne true. -->
+<?php include "..\..\bottom_html.php";
